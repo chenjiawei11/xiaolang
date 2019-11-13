@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Simple Canvas Game</title>
+		</head>
+	<body>
+			<audio controls="controls" autoplay="autoplay" controls="controls" hidden="hidden">
+					<source src="bgm.mp3" type="bgm.mp3">
+					<source src="bgm.mp3" type="audio/ogg">
+					<embed height="50px" width="100px" src="bgm.mp3">
+				</audio>
+		
+			
+			
+			<canvas width="512" height="480"style="position:absolute;top:0px;left:0px"></canvas>
+			<div id="gun1">
+					英雄血条：
+					<progress value='100' max='100' id="g1hp" style="color:brown"></progress>
+					经验值：
+					<progress value='0' max='10' id="exp" style="color:cadetblue"></progress>
+					当前等级：
+					<input type="text" value="1"disabled="disabled"id="lv">
+				</div>
+				<progress value='100' max='100' id="a"></progress>
+				<progress value='100' max='100' id="a1"></progress>
+				
+			<script src="game.js"></script>
+			
+			<div>
+				<img src="./images/alex.jpg" alt=""style="width=10px height=10px">
+				<img src="./images/dun.jpg" alt=""style="width=10px height=10px margin-left: 90px">
+				<!-- <img src="./images/fb.jpg" alt=""style="width=10px height=10px margin-left: 90px"> -->
+				<div><input type="button" value="碳钢斧  300金币" onclick="dadao()"style="margin-left: 20px">
+					<input type="button" value="钢盾  300金币" onclick="dun()"style="margin-left: 90px">
+					<!-- <input type="button" value="手里剑  20金币" onclick="fb()"style="margin-left: 90px"></div> -->
+				
+				
+			</div>
+			
+			
+	
+
+</body></html>
